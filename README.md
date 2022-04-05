@@ -1,16 +1,18 @@
 
-# Chocohills
+# 虫火谷工艺
 
-**Arfy Fetch Up and Down** -
-transfer item of vanilla storage
 
-**Keima Importer** -
-transfer item from  Vanilla storage to SF machine input
+## 内容
+**虫火谷单向上下口** -
+单向传输原版储存中的物品
 
-**Keima Exporter** -
-transfer item from SF machine ouput to Vanilla storage
+**虫火谷输入口** -
+将物品从原版储存转移至SF机器输入口
 
-**Choco Crystal** -
-basic recipe item
+**虫火谷输出口** -
+将物品从SF输出口转移至原版储存
 
-**Blastxel** - upgradable blast mining tool
+**虫火谷水晶** -
+基础合成材料
+
+**火谷之镐** - 爆炸工具的升级版
