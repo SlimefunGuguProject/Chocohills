@@ -5,3 +5,8 @@ version: ${project.version}
 api-version: 1.17
 depend:
 - Slimefun
+commands:
+  chtool:
+    description: debugger
+    usage: /chtool
+    permission: chtool.use
