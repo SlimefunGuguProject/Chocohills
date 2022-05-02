@@ -281,10 +281,10 @@ public class ChocoItems {
     public static final SlimefunItemStack ARFBON = new SlimefunItemStack(
             "ARFBON",
             Material.BASALT,
-            "&8&l煤炭生成器",
+            "&8&l碳生成器",
             "&7用于:",
-            "&f无限生产煤炭",
-            "&7产量: &f64 &7煤炭",
+            "&f无限生产碳",
+            "&7产量: &f8 &7碳",
             "&7速率: &f30 &7s",
             " ",
             "&7搭建:",
