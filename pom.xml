@@ -42,17 +42,6 @@
                 </includes>
             </resource>
         </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
-                <configuration>
-                    <!-- your plugin folder location -->
-                    <outputDirectory>F:\server\1.17.1 Minimal\plugins</outputDirectory>
-                </configuration>
-            </plugin>
-        </plugins>
 
     </build>
 
