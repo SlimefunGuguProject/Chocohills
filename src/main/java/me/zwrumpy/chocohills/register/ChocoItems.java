@@ -130,7 +130,7 @@ public class ChocoItems {
     public static final SlimefunItemStack KEIMAEXPORTER = new SlimefunItemStack(
             "KEIMAEXPORTER",
             Material.SLIME_BLOCK,
-            "&a&l虫火谷SF物品输出接口 &8(&7上&8)",
+            "&a&l虫火谷粘液物品输出接口 &8(&7上&8)",
             "&7用于",
             " &f将物品",
             " &7从&f粘液科技&7机器输出口",
@@ -138,14 +138,14 @@ public class ChocoItems {
             "",
             "&a贴士",
             " &f上: 原版容器: &6输出",
-            " &f中: 虫火谷SF物品输出接口: &7连接",
+            " &f中: 虫火谷输出接口: &7连接",
             " &f下: 粘液科技机器: &3输入"
     );
 
     public static final SlimefunItemStack KEIMAEXPORTER_DOWN = new SlimefunItemStack(
             "KEIMAEXPORTER_DOWN",
             Material.SLIME_BLOCK,
-            "&a&l虫火谷SF物品输出接口 &8(&7下&8)",
+            "&a&l虫火谷粘液物品输出接口 &8(&7下&8)",
             "&7用于",
             " &f将物品",
             " &7从&f粘液科技&7机器输出口",
@@ -153,7 +153,7 @@ public class ChocoItems {
             "",
             "&a贴士",
             " &f上: 粘液科技机器: &3输入",
-            " &f中: 虫火谷SF物品输出接口: &7连接",
+            " &f中: 虫火谷输出接口: &7连接",
             " &f下: 原版容器: &6输出"
     );
 
@@ -169,7 +169,7 @@ public class ChocoItems {
             "",
             "&a贴士",
             " &f上: 原版容器: &6输入",
-            " &f中: 虫火谷SF物品输出接口: &7连接",
+            " &f中: 虫火谷输出接口: &7连接",
             " &f下: 粘液科技机器: &3输出"
     );
 
@@ -184,7 +184,7 @@ public class ChocoItems {
             "",
             "&a贴士",
             " &f上: 粘液科技机器: &3输出",
-            " &f中: 虫火谷SF物品输出接口: &7连接",
+            " &f中: 虫火谷输出接口: &7连接",
             " &f下: 原版容器: &6输入"
     );
 
@@ -221,8 +221,7 @@ public class ChocoItems {
             Material.TORCH,
             "&6&l虫火谷火炬",
             "&7用于: ",
-            "&f给予30min",
-            "&f夜视",
+            "&f获得30分钟夜视效果",
             "",
             "&8左击空气",
             "&8激活"

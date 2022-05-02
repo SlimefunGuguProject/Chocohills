@@ -34,7 +34,7 @@ public class MaterialGeneratorSetup {
                         SlimefunItems.CARBON, ChocoItems.ARFWOOFERITE,  SlimefunItems.CARBON,
                         ChocoItems.CHOCO_CARBON, ChocoItems.TORCHTILLAS, ChocoItems.CHOCO_CARBON
                 })
-                .setItem(SlimefunItems.CARBON,8)
+                .setItem(SlimefunItems.CARBON,64)
                 .setRate(2, 30)
                 .register(addon);
 
