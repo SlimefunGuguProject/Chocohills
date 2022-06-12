@@ -6,6 +6,7 @@ import me.zwrumpy.chocohills.register.*;
 import me.zwrumpy.chocohills.tools.commands.ToolCommand;
 import me.zwrumpy.chocohills.tools.listener.PickaxeListener;
 import me.zwrumpy.chocohills.tools.listener.TorchInteract;
+import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nonnull;
@@ -17,16 +18,20 @@ public class ChocoHills extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
         this.saveDefaultConfig();
 
-        registerCommands();
-        registerListeners();
-
         instance = this;
+
+        if (getConfig().getBoolean("auto-update") && getDescription().getVersion().startsWith("Build")) {
+            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "Chocohills", "main", false, "zh-CN").start();
+        }
 
         new ToolSetup(this);
         new TransporterSetup(this);
         new MaterialGeneratorSetup(this);
         new MachineSetup(this);
         new ResourceSetup(this);
+
+        registerCommands();
+        registerListeners();
     }
 
     void registerCommands(){
