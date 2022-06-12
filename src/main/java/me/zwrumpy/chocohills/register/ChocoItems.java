@@ -20,7 +20,6 @@ public class ChocoItems {
     public static final SubItemGroup CH_TOOLS = subGroup("CH_TOOLS", "工具", Material.NETHERITE_PICKAXE);
     public static final SubItemGroup CH_GENERATOR = subGroup("CH_GENERATOR", "物品生成器", Material.ANCIENT_DEBRIS);
     public static final SubItemGroup CH_MACHINES = subGroup("CH_MACHINES", "机器", Material.HONEY_BLOCK);
-    //public static final ItemGroup CH_GROUP = new ItemGroup(new NamespacedKey(ChocoHills.getInstance(), "CH_GROUP"), new CustomItemStack(Material.SUNFLOWER, "&e&l虫火谷工艺"));
 
     static SubItemGroup subGroup( String namespaceKey, String name, Material icon){
         return new SubItemGroup(new NamespacedKey(ChocoHills.getInstance(), namespaceKey), CH_GENERAL,new CustomItemStack(icon, name));
@@ -125,7 +124,6 @@ public class ChocoItems {
             Material.GOLD_INGOT,
             "&e&l虫火谷锭",  ""
     );
-
 
     public static final SlimefunItemStack KEIMAEXPORTER = new SlimefunItemStack(
             "KEIMAEXPORTER",
@@ -246,6 +244,17 @@ public class ChocoItems {
             LoreBuilder.powerPerSecond(20)
     );
 
+    public static final SlimefunItemStack CHOCO_ADVANCE_ANVIL = new SlimefunItemStack(
+            "CHOCO_ADVANCE_ANVIL",
+            Material.BONE_BLOCK,
+            "&e进阶铁砧",
+            "&7U用于:",
+            "&f合并附魔",
+            LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
+            LoreBuilder.speed(1),
+            LoreBuilder.powerPerSecond(20)
+    );
+
     public static final SlimefunItemStack MENARDZ_SMOKER = new SlimefunItemStack(
             "MENARDZ_SMOKER",
             Material.CAMPFIRE,
@@ -297,7 +306,7 @@ public class ChocoItems {
             "&7用于:",
             "&f无限生产紫水晶簇",
             "&7产量: &f16 &7紫水晶簇",
-            "&7速率: &f2 &7min",
+            "&7速率: &f2 &7分钟",
             " ",
             "&7搭建:",
             "&f在生成器上方放置一个箱子"
@@ -322,8 +331,8 @@ public class ChocoItems {
             "&f钻石生成器",
             "&7用于:",
             "&f无限生产钻石",
-            "&7产量: &f1 &7钻石",
-            "&7速率: &f15 &7min",
+            "&7产量: &f2 &7钻石",
+            "&7速率: &f10 &7分钟",
             " ",
             "&7搭建:",
             "&f在生成器上方放置一个箱子"

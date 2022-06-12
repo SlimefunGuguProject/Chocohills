@@ -1,15 +1,14 @@
-package me.zwrumpy.chocohills.listener;
+package me.zwrumpy.chocohills.tools.listener;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.logging.Level;
-import me.zwrumpy.chocohills.util.block.BlockEdit;
-import me.zwrumpy.chocohills.util.block.BlockSelection;
-import me.zwrumpy.chocohills.util.block.BlockType;
+
+import me.zwrumpy.chocohills.tools.block.BlockEdit;
+import me.zwrumpy.chocohills.tools.block.BlockSelection;
+import me.zwrumpy.chocohills.tools.block.BlockType;
 import me.zwrumpy.chocohills.util.tool.ToolType;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -30,7 +29,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public class PickaxeListener implements Listener {
     private JavaPlugin plugin;
     private HashMap<Player, BlockFace> blockfaceMap;
-    private BlockSelection selection;
+    private final BlockSelection selection;
     private ToolType tool;
     private BlockType blockType;
     private BlockEdit blockEdit;
@@ -78,8 +77,7 @@ public class PickaxeListener implements Listener {
     boolean isBlastxelOnHand(@Nonnull Player player) {
         SlimefunItem sfItem = SlimefunItem.getByItem(player.getInventory().getItemInMainHand());
         if (sfItem == null) return false;
-        if (!sfItem.getId().contains("BLASTXEL")) return false;
-        return true;
+        return sfItem.getId().contains("BLASTXEL");
     }
 
     int getLevel(@Nonnull SlimefunItem item) {
