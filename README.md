@@ -1,31 +1,32 @@
 
-# Chocohills
+# 虫火谷工艺
 
-**Resources**
-  * Choco Crystal - basic recipe item
-  * Compressed Crystal
-  * Hyper Crystal
-  * Choco Crystal X2
-  * Energized Crystal
-  * Choco Carbon
-  * Ayan Crystal
-  * Ghosting Goo
+**资源**
+  * 虫火谷水晶
+  * 液压结晶
+  * 超晶体
+  * 虫火谷水晶 X2
+  * 增能晶体
+  * 火谷碳
+  * 火谷碎片
+  * 鬼之粘液
 
-**Machines**
-  * Menardz Smoker - makes chicken egg into tinapang itlog
-  * EggCooker - makes tinapang itlog into eggpensive
+**机器**
+  * 梅纳兹烟熏机
+  * 烹蛋机
 
-**Item Transporters**
-  * Arfy Fetch Up and Down - fast item transfer of vanilla storage
-  * Keima Importer - transfer item from  Vanilla storage to SF machine input
-  * Keima Exporter - transfer item from SF machine output to Vanilla storage
+**货运**
+  * 虫火谷SF物品输出/输入接口
+  * 虫火谷原版物品输出/输入接口
+  * 虫火谷单项口上/下
 
-**Tools**
-  * Torchtillas - unlimited night vision torch 
-  * Blastxel - upgradable blast mining tool
+**工具**
+  * 虫火谷火炬 - 给予你无尽的夜视
+  * 火谷之镐 - 爆炸镐的升级版
 
-**Material Generators**
-  * Arfwooferite - netherite generator
-  * Arfbon - carbon generator
-  * AyanCluster - amethyst cluster generator
-  * Drt Goo - strange nether goo generator
+**材料生成器**
+  * 下界合金生成器
+  * 煤炭生成器
+  * 紫水晶簇生成器
+  * 奇怪的下界粘液生成器
+  * 钻石生成器
