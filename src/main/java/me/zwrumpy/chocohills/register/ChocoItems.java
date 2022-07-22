@@ -337,4 +337,29 @@ public class ChocoItems {
             "&7搭建:",
             "&f在生成器上方放置一个箱子"
     );
+
+    public static final SlimefunItemStack DEAN_TAMBAK = new SlimefunItemStack(
+            "DEAN_TAMBAK",
+            Material.PODZOL,
+            "&b&lDean Tambak",
+            "&7Usage:",
+            "&fDirt Generator",
+            "&7Rate: &f64 &7Dirt",
+            "&7Time: &f3 &7minutes",
+            " ",
+            "&7Setup:",
+            "&fPlace Chest on top of this block"
+    );
+
+    public static final SlimefunItemStack GREEN_THUMB = new SlimefunItemStack(
+            "GREEN_THUMB",
+            Material.GREEN_CONCRETE,
+            "&b&lGreen Thumb",
+            "&7Usage:",
+            "&7Convert Dirt to Grass Block",
+            " ",
+            "&7Rate: 32 Grass block per 5 seconds",
+            " ",
+            "&7Input: &f32 Dirt block"
+    );
 }

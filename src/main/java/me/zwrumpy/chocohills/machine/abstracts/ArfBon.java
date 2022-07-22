@@ -1,4 +1,4 @@
-package me.zwrumpy.chocohills.machine;
+package me.zwrumpy.chocohills.machine.abstracts;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -21,14 +21,14 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MaterialGenerator extends SlimefunItem {
+public class ArfBon extends SlimefunItem {
 
-    private static final Map<BlockPosition, Integer> generatorProgress = new HashMap<>();
+    private final Map<BlockPosition, Integer> generatorProgress = new HashMap<>();
     private int rate = 20;
     private ItemStack item;
 
     @ParametersAreNonnullByDefault
-    public MaterialGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    public ArfBon(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
@@ -38,7 +38,7 @@ public class MaterialGenerator extends SlimefunItem {
             @Override
             @ParametersAreNonnullByDefault
             public void tick(Block b, SlimefunItem sf, Config data) {
-                MaterialGenerator.this.tick(b);
+                ArfBon.this.tick(b);
             }
 
             @Override
@@ -66,44 +66,29 @@ public class MaterialGenerator extends SlimefunItem {
             final BlockPosition pos = new BlockPosition(b);
             int progress = generatorProgress.getOrDefault(pos, 0);
 
+            progress++;
+
             if (progress >= this.rate) {
                 progress = 0;
                 inv.addItem(this.item);
-            } else {
-                progress++;
             }
             generatorProgress.put(pos, progress);
         }
     }
 
     @ParametersAreNonnullByDefault
-    public final MaterialGenerator setItem(Material material, int amount) {
-        this.item = new ItemStack(material, amount);
-        return this;
-    }
-
-    public final MaterialGenerator setItem(@Nonnull Material material) {
-        this.item = new ItemStack(material);
-        return this;
-    }
-
-    public final MaterialGenerator setItem(@Nonnull SlimefunItemStack material) {
-        this.item = material;
-        return this;
-    }
-
-    @ParametersAreNonnullByDefault
-    public final MaterialGenerator setItem(SlimefunItemStack material, int amount) {
+    public final ArfBon setItem(SlimefunItemStack material, int amount) {
         ItemStack item = material.clone();
         item.setAmount(amount);
         this.item = item;
         return this;
     }
-
     @ParametersAreNonnullByDefault
-    public final MaterialGenerator setRate(int rateTicks, int seconds) {
+    public final ArfBon setRate(int rateTicks, int seconds) {
         this.rate = Math.max(rateTicks, seconds * 2);
         return this;
     }
 }
+
+
 
